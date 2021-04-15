@@ -8,12 +8,21 @@
     mc:Ignorable="d">
 
     <Grid>
-        <Button x:Name="Hello" Content="Hello, Baby Alex!" FontSize="30" FontFamily="Comic Sans MS"
-                Margin="46,39,0,0" VerticalAlignment="Top" Height="83" Width="317" 
-                Click="Button_Click" />
-        
+        <Button x:Name="BabyAlex" Content="Hello, I am Baby Alex!" FontSize="30" FontFamily="Comic Sans MS"
+                Margin="46,39,0,0" VerticalAlignment="Top" Height="83" Width="600" 
+                Click="BabyAlexButton_Click" />
+
+        <Button x:Name="MommyR" Content="My Mommy!" FontSize="30" FontFamily="Comic Sans MS"
+                Margin="46,122,0,0" VerticalAlignment="Top" Height="83" Width="300" 
+                Click="MommyRButton_Click" RenderTransformOrigin="0.504,3.023" />
+
+        <Button x:Name="DaddyT" Content="My Daddy!" FontSize="30" FontFamily="Comic Sans MS"
+                Margin="346,122,0,0" VerticalAlignment="Top" Height="83" Width="300" 
+                Click="DaddyTButton_Click" RenderTransformOrigin="0.504,3.023" />
+
         <TextBlock x:Name="TitleTextBlock" Text="Collection" TextWrapping="Wrap" 
-                   Margin="24,150,24,24" Style="{StaticResource TitleTextBlockStyle}"/>
-        
+                   Margin="24,262,24,24" Style="{StaticResource TitleTextBlockStyle}"/>
+
     </Grid>
+
 </Page>

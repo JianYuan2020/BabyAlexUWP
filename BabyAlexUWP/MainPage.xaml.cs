@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Windows.Media.SpeechSynthesis;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -32,7 +33,7 @@ namespace BabyAlexUWP
       }
     }
 
-    private async void Button_Click(object sender, RoutedEventArgs e)
+    private async void BabyAlexButton_Click(object sender, RoutedEventArgs e)
     {
       // The string to speak with SSML customizations.
       /*string Ssml =
@@ -52,12 +53,25 @@ namespace BabyAlexUWP
       babyAlex += "I am a happy baby" + "<break time='1000ms'/>";
 
       readText(VoiceGender.Male, babyAlex);
+    }
 
-      string mommyR = "Hello, baby Alex" + "<break time='1000ms'/>";
+    private async void MommyRButton_Click(object sender, RoutedEventArgs e)
+    {
+      string mommyR = "Hi, my precious baby Alex" + "<break time='1000ms'/>";
+      mommyR += "We love you so very much" + "<break time='1000ms'/>";
       mommyR += "Are you having fun?" + "<break time='1000ms'/>";
 
       readText(VoiceGender.Female, mommyR);
-
     }
+
+    private async void DaddyTButton_Click(object sender, RoutedEventArgs e)
+    {
+      string daddyT = "Hi, my strong baby Alex" + "<break time='1000ms'/>";
+      daddyT += "We love you so very much" + "<break time='1000ms'/>";
+      daddyT += "Are you having fun?" + "<break time='1000ms'/>";
+
+      readText(VoiceGender.Male, daddyT);
+    }
+
   }
 }
