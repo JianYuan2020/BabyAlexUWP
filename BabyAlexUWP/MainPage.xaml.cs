@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Windows.Media.SpeechSynthesis;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -21,7 +23,7 @@ namespace BabyAlexUWP
     {
       MediaElement mediaElement = new MediaElement();
       var synth = new SpeechSynthesizer();
-      SpeechSynthesisStream stream = await synth.SynthesizeTextToStreamAsync((string)hello.Content);
+      SpeechSynthesisStream stream = await synth.SynthesizeTextToStreamAsync((string)Hello.Content);
       mediaElement.SetSource(stream, stream.ContentType);
       mediaElement.Play();
     }
